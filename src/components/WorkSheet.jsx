@@ -57,7 +57,7 @@ const WorkSheet = () => {
         <div className="container-xl ">
           <div className='grid grid-cols-10 bg-white p-4 flex-col min-h-screen shadow '>
             <div className="col-span-3 max-w-[450px] bg-white border rounded-lg">
-              <h1 className='text-black mt-6 text-center font-mono font-medium text-[34px] text-nowrap'>
+              <h1 className='text-black mt-6 text-center  font-mono font-medium text-[34px] text-nowrap'>
                 MY WorkSheet
               </h1>
               <div className='flex flex-col gap-5  justify-center items-center pt-12  '>
