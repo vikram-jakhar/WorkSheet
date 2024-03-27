@@ -61,9 +61,9 @@ const WorkSheet = () => {
                 MY WorkSheet
               </h1>
               <div className='flex flex-col gap-5  justify-center items-center pt-12  '>
-                <button onClick={() => tabchange(0)} className={`${first === 0 && "text-white bg-[green]"} max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green]`}>Jan</button>
-                <button onClick={() => tabchange(1)} className={` ${first === 1 && "text-white bg-[green]"}  max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green]`}>Feb</button>
-                <button onClick={() => tabchange(2)} className={` ${first === 2 && "text-white  bg-[green]"} max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green]`}>Mar</button>
+                <button onClick={() => tabchange(0)} className={`${first === 0 && "text-white !bg-[green]"} max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green]`}>Jan</button>
+                <button onClick={() => tabchange(1)} className={` ${first === 1 && "text-white !bg-[green]"}  max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green]`}>Feb</button>
+                <button onClick={() => tabchange(2)} className={` ${first === 2 && "text-white  !bg-[green]"} max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green]`}>Mar</button>
               </div>
             </div>
             <div className=' col-span-7 h-[810px] shadow p-28 rounded-[10%]  overflow-hidden overflow-y-scroll'>
