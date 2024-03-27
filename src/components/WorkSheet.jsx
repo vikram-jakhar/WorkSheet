@@ -61,9 +61,9 @@ const WorkSheet = () => {
                 MY WorkSheet
               </h1>
               <div className='flex flex-col gap-5  justify-center items-center pt-12  '>
-                <button onClick={() => tabchange(0)} className={`${first === 0 && "text-white !bg-[green]"} max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green]`}>Jan</button>
-                <button onClick={() => tabchange(1)} className={` ${first === 1 && "text-white !bg-[green]"}  max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green]`}>Feb</button>
-                <button onClick={() => tabchange(2)} className={` ${first === 2 && "text-white  !bg-[green]"} max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green]`}>Mar</button>
+                <button onClick={() => tabchange(0)} className={`${first === 0 && "text-white !bg-[green]"} max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green] duration-300 ease-in-out'`}>Jan</button>
+                <button onClick={() => tabchange(1)} className={` ${first === 1 && "text-white !bg-[green]"}  max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green] duration-300 ease-in-out'`}>Feb</button>
+                <button onClick={() => tabchange(2)} className={` ${first === 2 && "text-white  !bg-[green]"} max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green] duration-300 ease-in-out'`}>Mar</button>
               </div>
             </div>
             <div className=' col-span-7 h-[810px] shadow p-12 rounded-[10%]  overflow-hidden overflow-y-scroll'>
@@ -77,8 +77,8 @@ const WorkSheet = () => {
                         {isLoading ? "" : (<img src={data.image} alt={data.title} className=" rounded-xl max-w-[200px] w-full" width={200} height={118} />)}
                         <div className="flex flex-col max-w-[470px] w-full gap-2">
                           {isLoading ? "" : (<h3 className="text-xl font-sans font-bold capitalize">{data.title}<span className="ml-5 text-sm font-light opacity-90">Date of submisson:- {data.date}</span></h3>)}
-                          {isLoading ? "" : (<a target="_blank" href={data.gitHubLink} className="text-gray-600 font-serif font-extralight">GitHub link:- <span className="text-blue-500 ">{data.gitHubLink}</span></a>)}
-                          {isLoading ? "" : (<a target="_blank" href={data.liveLink} className="text-gray-600 font-serif font-extralight">Live link:- <span className="text-blue-500">{data.liveLink}</span></a>)}
+                          {isLoading ? "" : (<p className='text-gray-600 font-serif font-extralight'>GitHubLink:- <span className='text-blue-500 '><a target="_blank" href={data.gitHubLink} >{data.gitHubLink}</a></span></p>)}
+                          {isLoading ? "" : (<p className='text-gray-600 font-serif font-extralight'>LiveLInk:- <span className='text-blue-500 '><a target="_blank" href={data.liveLink} >{data.liveLink}</a></span></p>)}
                         </div>
                       </div>
                     ))
@@ -96,8 +96,8 @@ const WorkSheet = () => {
                         {isLoading ? "" : (<img src={data.image} alt={data.title} className=" rounded-xl max-w-[200px] w-full" width={200} height={118} />)}
                         <div className="flex flex-col max-w-[470px] w-full gap-2">
                           {isLoading ? "" : (<h3 className="text-xl  font-sans font-bold capitalize">{data.title}<span className="ml-5 text-sm font-light opacity-90">Date of submisson:- {data.date}</span></h3>)}
-                          {isLoading ? "" : (<a target="_blank" href={data.gitHubLink} className="text-gray-600 font-serif font-extralight">GitHub link:- <span className="text-blue-500 ">{data.gitHubLink}</span></a>)}
-                          {isLoading ? "" : (<a target="_blank" href={data.liveLink} className="text-gray-600 font-serif font-extralight">Live link:- <span className="text-blue-500">{data.liveLink}</span></a>)}
+                          {isLoading ? "" : (<p className='text-gray-600 font-serif font-extralight'>GitHubLink:- <span className='text-blue-500 '><a target="_blank" href={data.gitHubLink} >{data.gitHubLink}</a></span></p>)}
+                          {isLoading ? "" : (<p className='text-gray-600 font-serif font-extralight'>LiveLInk:- <span className='text-blue-500 '><a target="_blank" href={data.liveLink} >{data.liveLink}</a></span></p>)}
                         </div>
                       </div>
                     ))
@@ -116,8 +116,8 @@ const WorkSheet = () => {
                         {isLoading ? "" : (<img src={data.image} alt={data.title} className=" rounded-xl max-w-[200px] w-full" width={200} height={118} />)}
                         <div className="flex flex-col max-w-[470px] w-full gap-2">
                           {isLoading ? "" : (<h3 className="text-xl font-sans font-bold capitalize">{data.title}<span className="ml-5 text-sm font-light opacity-90">Date of submisson:- {data.date}</span></h3>)}
-                          {isLoading ? "" : (<a target="_blank" href={data.gitHubLink} className="text-gray-600 font-serif font-extralight">GitHub link:- <span className="text-blue-500 ">{data.gitHubLink}</span></a>)}
-                          {isLoading ? "" : (<a target="_blank" href={data.liveLink} className="text-gray-600 font-serif font-extralight">Live link:- <span className="text-blue-500">{data.liveLink}</span></a>)}
+                          {isLoading ? "" : (<p className='text-gray-600 font-serif font-extralight'>GitHubLink:- <span className='text-blue-500 '><a target="_blank" href={data.gitHubLink} >{data.gitHubLink}</a></span></p>)}
+                          {isLoading ? "" : (<p className='text-gray-600 font-serif font-extralight'>LiveLInk:- <span className='text-blue-500 '><a target="_blank" href={data.liveLink} >{data.liveLink}</a></span></p>)}
                         </div>
                       </div>
                     ))
@@ -132,7 +132,7 @@ const WorkSheet = () => {
       </ >
 
     </>
-  ) 
+  )
 }
 
 export default WorkSheet
