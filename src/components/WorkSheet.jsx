@@ -12,6 +12,7 @@ import Cloop from '../assets/img/Cloop.png'
 import Labs from '../assets/img/Labs.png'
 import Worksheet from '../assets/img/workSheet.png'
 import Swiper from '../assets/img/swiper.webp'
+import Nobal from '../assets/img/nobalmind.webp.png'
 
 
 const WorkSheet = () => {
@@ -51,6 +52,12 @@ const WorkSheet = () => {
         { id: 4, title: "Swiper", gitHubLink: "https://github.com/vikram-jakhar/PracticePage.git", liveLink: "https://practice-page-three.vercel.app/", image: (Swiper), date: "29-03-2024" },
       ]
     },
+    {
+      apr: [
+        { id: 1, title: "Nobile Minde", gitHubLink: "https://github.com/vikram-jakhar/noble-mind.git", liveLink: "https://noble-mind-23oc.vercel.app/", image: (Nobal), date: "07-04-2024", },
+        
+      ]
+    },
   ]
   return (
 
@@ -66,6 +73,7 @@ const WorkSheet = () => {
               <button onClick={() => tabchange(0)} className={`${first === 0 && "text-white !bg-[green]"} max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green] duration-300 ease-in-out'`}>Jan</button>
               <button onClick={() => tabchange(1)} className={` ${first === 1 && "text-white !bg-[green]"}  max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green] duration-300 ease-in-out'`}>Feb</button>
               <button onClick={() => tabchange(2)} className={` ${first === 2 && "text-white  !bg-[green]"} max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green] duration-300 ease-in-out'`}>Mar</button>
+              <button onClick={() => tabchange(3)} className={` ${first === 3 && "text-white  !bg-[green]"} max-w-[122px] text-[20px] font-serif font-normal cursor-pointer bg-transparent border-[3px] p-[4px_45px] rounded-[50px] hover:bg-[green] hover:text-[white] inline-block  border-solid border-[green] duration-300 ease-in-out'`}>Apr</button>
             </div>
           </div>
           <div className=' col-span-7 h-[810px] shadow p-12 rounded-[10%]  overflow-hidden overflow-y-scroll'>
@@ -113,6 +121,25 @@ const WorkSheet = () => {
                 {isLoading ? "" : (<h2 className="text-[20px] font-serif font-semibold text-black opacity-90">March Topics :-</h2>)}
                 <div className="flex flex-col gap-5 ">
                   {workData[2].march.map((data, index) => (
+                    <div className="flex gap-3 pt-5 items-center  " key={index}>
+                      {isLoading ? "" : (<span className=" flex items-center font-mono font-thin justify-center text-[20px] border px-1 w-[35px] h-[35px] text-white bg-[green] rounded-full">{data.id}</span>)}
+                      {isLoading ? "" : (<img src={data.image} alt={data.title} className=" rounded-xl max-w-[200px] w-full" width={200} height={118} />)}
+                      <div className="flex flex-col max-w-[470px] w-full gap-2">
+                        {isLoading ? "" : (<h3 className="text-xl font-sans font-bold capitalize">{data.title}<span className="ml-5 text-sm font-light opacity-90">Date of submisson:- {data.date}</span></h3>)}
+                        {isLoading ? "" : (<p className='text-gray-600 font-serif font-extralight'>GitHubLink:- <span className='text-blue-500 '><a className='underline' target="_blank" href={data.gitHubLink} >Visit</a></span></p>)}
+                        {isLoading ? "" : (<p className='text-gray-600 font-serif font-extralight'>LiveLInk:- <span className='text-blue-500 '><a className='underline' target="_blank" href={data.liveLink} >Visit</a></span></p>)}
+                      </div>
+                    </div>
+                  ))
+                  }
+                </div>
+              </div>
+            }
+            {
+              first === 3 && <div className="p-4 bg-transparent shadow-xl rounded-2xl">
+                {isLoading ? "" : (<h2 className="text-[20px] font-serif font-semibold text-black opacity-90">April Topics :-</h2>)}
+                <div className="flex flex-col gap-5 ">
+                  {workData[3].apr.map((data, index) => (
                     <div className="flex gap-3 pt-5 items-center  " key={index}>
                       {isLoading ? "" : (<span className=" flex items-center font-mono font-thin justify-center text-[20px] border px-1 w-[35px] h-[35px] text-white bg-[green] rounded-full">{data.id}</span>)}
                       {isLoading ? "" : (<img src={data.image} alt={data.title} className=" rounded-xl max-w-[200px] w-full" width={200} height={118} />)}
