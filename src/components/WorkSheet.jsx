@@ -31,7 +31,7 @@ const WorkSheet = () => {
     {
       jan: [
         { id: 1, title: "DompKong", gitHubLink: "https://github.com/vikram-jakhar/DomPKong.git", liveLink: "https://dom-p-kong.vercel.app/", image: (Dompkong), date: "03-01 2024", },
-        { id: 2, title: "Reset Counter", gitHubLink: "https://github.com/vikram-jakhar/counter-page-reset.git", liveLink: "https://counterpagerestboutton.netlify.app", image: (Counter), date: "15-09-2023" },
+        { id: 2, title: "Reset Counter", gitHubLink: "https://github.com/vikram-jakhar/counter-page-reset.git", liveLink: "https://counterpagerestboutton.netlify.app", image: (Counter), date: "15-01-2023" },
         { id: 3, title: "Aviation Landing", gitHubLink: "https://github.com/vikram-jakhar/Aviation_Landing.git", liveLink: "https://aviation-landing.vercel.app/", image: (FT_plan), date: "10-01-2024" },
         { id: 4, title: "Design", gitHubLink: "https://github.com/vikram-jakhar/Design.git", liveLink: "https://design-seven-mu.vercel.app/", image: (Design), date: "20-01-2024" },
         { id: 5, title: "Lamon Wares", gitHubLink: "https://github.com/vikram-jakhar/Lemon.git", liveLink: "https://lemon-five.vercel.app/", image: (Lemon), date: "27-01-2024" },
@@ -55,7 +55,7 @@ const WorkSheet = () => {
     },
     {
       apr: [
-        { id: 1, title: "Nobile Minde", gitHubLink: "https://github.com/vikram-jakhar/noble-mind.git", liveLink: "https://noble-mind-23oc.vercel.app/", image: (Nobal), date: "07-04-2024", },
+        { id: 1, title: "Noble Mind", gitHubLink: "https://github.com/vikram-jakhar/noble-mind.git", liveLink: "https://noble-mind-23oc.vercel.app/", image: (Nobal), date: "07-04-2024", },
         { id: 2, title: "Email-js", gitHubLink: "https://github.com/vikram-jakhar/Emailjs.git", liveLink: "https://emailjs-cyan.vercel.app/", image: (Emailjs), date: "17-04-2024", },
         
       ]
