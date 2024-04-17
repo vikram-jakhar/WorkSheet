@@ -13,6 +13,7 @@ import Labs from '../assets/img/Labs.png'
 import Worksheet from '../assets/img/workSheet.png'
 import Swiper from '../assets/img/swiper.webp'
 import Nobal from '../assets/img/nobalmind.webp.png'
+import Emailjs from '../assets/img/emailjs.webp'
 
 
 const WorkSheet = () => {
@@ -55,6 +56,7 @@ const WorkSheet = () => {
     {
       apr: [
         { id: 1, title: "Nobile Minde", gitHubLink: "https://github.com/vikram-jakhar/noble-mind.git", liveLink: "https://noble-mind-23oc.vercel.app/", image: (Nobal), date: "07-04-2024", },
+        { id: 2, title: "Email-js", gitHubLink: "https://github.com/vikram-jakhar/Emailjs.git", liveLink: "https://emailjs-cyan.vercel.app/", image: (Emailjs), date: "17-04-2024", },
         
       ]
     },
